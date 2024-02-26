@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account | REI Co-op</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav>
+      <span>Shop REI</span>
+      <span>REI Outlet</span>
+      <span>Re/Supply</span>
+      <span>REI Adventures</span>
+      <span>Classes & Events</span>
+      <span> Expert Advice</span>
+      <span>Uncommon Path</span>
+      <span>Membership</span>
+    </nav>
+    <div>
+      <span>REI CO-OP Shop</span>
+      <span class="bar">Stores</span>
+      <span class="bar">Sign In</span>
+      <span class="bar">Cart</span>
+      <hr />
+    </div>
+    <div>
+      <h1 class="inputgroup">Create a new REI online Account</h1>
+      <div class="inputgroup">* Required Information</div>
+      <form action="./showdata.html" method="get">
+        <div class="inputgroup">
+          <label>Email Address *</label>
+          <input
+            type="email"
+            id="emailaddress"
+            name="emailaddress"
+            required
+            size="75"
+          />
+        </div>
+        <div class="inputgroup">
+          <label>First Name *</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            required
+            size="75"
+          />
+        </div>
+        <div class="inputgroup">
+          <label>Last Name *</label>
+          <input type="text" id="lastname" name="lastname" required size="75" />
+        </div>
+        <div class="inputgroup">
+          <label>Password *</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            size="75"
+            minlength="8"
+            maxlength="10"
+          />
+        </div>
+        <div class="inputgroup">8-256 Characters</div>
+        <div class="inputgroup">
+          <label>Confirm password*</label>
+          <input
+            type="password"
+            id="confirmpassword"
+            name="confirmpassword"
+            required
+            size="75"
+            minlength="8"
+            maxlength="10"
+          />
+        </div>
+        <div class="inputgroup">
+          <input type="checkbox" id="notifyMe" name="notifyMe" />
+          <label class="checkboxlabel"
+            >Notify me about REI news, offers, and events at my email address
+          </label>
+        </div>
+        <p class="inputgroup">
+          When you create an account, you agree to REI's Terms of Use and
+          acknowledge you have read its Privacy Policy.
+        </p>
+        <button
+          id="createButtonAccount"
+          name="createButtonAccount"
+          type="submit"
+        >
+          Create account
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
